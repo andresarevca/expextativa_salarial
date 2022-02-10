@@ -1,0 +1,77 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    display:grid ;
+	place-items: center;
+    margin-top: 40px;
+}
+
+.form-container{
+    border: 1px solid black;
+    padding: 10px;
+    width: 450px;
+    display: grid;
+    place-items: center;
+}
+
+.form-container h3{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.form-container-two{
+    margin-top: 40px;
+    border: 1px solid black; 
+    padding: 10px;
+    width: 450px;
+    text-align: center;
+}
+
+.form-container-two h3{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.mes-anho{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.mes-anho p{
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.label-input-guaranies{
+    margin-bottom: 8px;
+}
+
+.label-input-aumento-mensual{
+    margin-bottom: 8px;
+}
+
+.input-guaranies{
+    margin-bottom: 16px;
+}
+
+.input-aumento{
+    margin-bottom: 16px;
+}
+
+.select-mes{
+    width: 100px;
+    justify-self: center;
+    margin-bottom: 16px;
+}
+
+.select-anho{
+    width: 100px;
+    justify-self: center;
+    margin-bottom: 16px;
+}
+
+.button-calcular{
+    margin-top: 32px;
+    width: 450px;
+}
