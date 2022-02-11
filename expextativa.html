@@ -12,25 +12,42 @@
 </head>
 <body> 
     <div class="container">
-        <h2>Ganancia/Aumento:</h2>
+        <div class="label-container">
+            <h2>Ganancia/Aumento:</h2>
+            <h2 id="labelAumento"></h2> 
+        </div>
         <div class="form-container">
             <h3>Sueldo</h3>
             <label for="input-guaranies" class="label-input-guaranies">Guaranies</label>
-            <input type="number" class="input-guaranies">
-            <label for="input-aumento" class="label-input-aumento-mensual">Aumento mensual</label>
-            <input type="number" class="input-aumento">
+            <input type="number" class="input-guaranies" id="inputGuaranies">
+            <label for="input-aumento" class="label-input-aumento-mensual">Aumento mensual (%)</label>
+            <input type="number" class="input-aumento" id="inputAumento">
         </div>
         <div class="form-container-two">
             <h3>Expectativa de ganancia</h3>
             <div class="mes-anho">
                 <p>Mes</p>
                 <p>Año</p>
-                <select class="select-mes"></select>
-                <select class="select-anho"></select>
+                <select class="select-mes">
+                    <option value="0"></option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                <input type="number" class="select-anho">
             </div> 
             
         </div>
-        <button class="button-calcular">Calcular</button>
+        <button class="button-calcular" onclick="onClickButtonAumento()">Calcular</button>
     </div>
     <script src="./expectativa.js"></script>
 </body>
